@@ -25,7 +25,7 @@ exports.handler = async function (event, context) {
    dynamo.deleteItem(params, function (err, data) {
          console.log("in delete item block. ");
         if (err) {
-            console.log("Unable to delete item. Error JSON:", JSON.stringify(err, null, 2));
+            console.log("Unable to delete item.");
         } else {
             console.log("DeleteItem succeeded:", JSON.stringify(data, null, 2));
         }
